@@ -1,0 +1,1060 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*---------------CSS記述--------------------*/
+
+/*オープニング*/
+.start {
+    background:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+}
+.start p {
+    font-family: 'impact';
+    color: rgb(65, 185, 201);
+    font-size: 80px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width: 380px;
+}
+
+/*ヘッダー*/
+header{
+    width:100%;
+    height:50px;
+    background-color: rgba(23, 34, 80, 0.904);
+    position:fixed;
+    z-index:10;
+
+}
+.header-left{
+    float:left;
+}
+.header-title{
+    color:white;
+    font-family: 'impact';
+    font-size: 35px;
+    cursor:pointer;
+    margin-top:7px;
+    padding-left:20px;
+}
+.header-title:hover{
+    color:rgb(216, 33, 207);
+    transition:color .3s;
+}
+.header-menu li{
+    float:right;
+}
+.header-menu a{
+    font-family: 'Hiragino Maru Gothic ProN';
+    font-size: 15px;
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    padding:18px 25px 18px 18px;
+}
+.header-menu a:hover{
+    color:rgb(65, 185, 201);
+    transition:color .3s;
+}
+ul{
+    list-style:none;
+}
+
+/*トップ*/
+.top{
+    height:150px;
+    width:100%;
+    padding-top:80px;
+    padding-bottom: 15px;
+    background-color:rgba(209, 203, 203, 0.555);
+}
+.title{
+    color:black;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Hiragino Maru Gothic ProN';
+}
+.sub-title{
+    font-family: 'Hiragino Maru Gothic ProN';
+    text-align:center;
+    padding-top:30px;
+    font-weight: bolder;
+}
+
+/*本文*/
+.main{
+margin-bottom:100px;
+width:100%;
+}
+.topic{
+    font-family: 'Osaka-Mono';
+    padding-left:30px;
+    padding-top:30px;
+    font-size: 30px;
+    border-bottom:solid 5px rgb(255, 243, 80);
+}
+
+/*パワーコードとは？*/
+.code-about-section{
+    padding-top:50px;
+}
+.text-about{
+    padding-left:40px;
+    padding-top:30px;
+    font-family: 'Hiragino Maru Gothic ProN';
+    font-size: 18px;
+    color:rgb(75, 75, 75);
+}
+.text-about span{
+    font-weight: bold;
+    color:black;
+    border-bottom:dashed 3px rgb(65, 185, 201);
+    
+}
+.example{
+    padding:20px;
+    margin-left:25%;
+    font-family: 'Hiragino Maru Gothic ProN';
+    font-size: 18px;
+    color:rgb(75, 75, 75);
+    border:solid 5px rgb(147, 219, 99);
+    border-radius: 20px;
+    display: inline-block;
+}
+.bold{
+    font-weight: bold;
+    color:black;
+    font-size: 20px;
+}
+.mark{
+color:rgb(216, 33, 207);
+font-weight: bold;
+font-size: 40px;
+}
+.summary{
+    padding-left:40px;
+    font-family: 'Hiragino Maru Gothic ProN';
+    font-size: 18px;
+    color:rgb(75, 75, 75);
+}
+.summary span{
+    font-weight: bold;
+    color:black;
+    border-bottom:dashed 3px rgb(65, 185, 201);
+}
+
+/*コード譜を簡単に！*/
+.code-change-section{
+    padding-top:50px;
+}
+.score-title{
+    margin-bottom:30px;
+    font-weight: bold;
+}
+.score{
+    margin-left:40px;
+    margin-top:50px;
+    font-family: 'Hiragino Maru Gothic ProN';
+    font-size: 18px;
+}
+.lyrics-score{
+    margin-top:10px;
+    font-size:22px;
+}
+.code-score2 span{
+font-weight: bold;
+font-size: 24px;
+padding-top: .4em;
+    background-position: top 0px left -8px;
+    background-repeat: repeat-x;
+    background-size: 1.3em .3em;
+    background-image: radial-gradient(.15em .15em at center center,rgb(216, 33, 207),rgb(216, 33, 207) 100%,transparent);
+}
+
+/*--------コード表----------*/
+.code-menu-section{
+    padding-top: 50px;
+}
+.topic{
+    font-family: 'Osaka-Mono';
+    padding-left:30px;
+    padding-top:30px;
+    font-size: 30px;
+    border-bottom:solid 5px rgb(255, 243, 80);
+}
+.text-code{
+    font-family: 'Hiragino Maru Gothic ProN';
+    padding-left:30px;
+    padding-top:20px;
+    font-size: 18px;
+}
+.code{
+    position: relative;
+    width:350px;
+    background: rgb(172, 146, 77);
+}
+.fret{
+    margin-top:15px;
+}
+table {
+    border-collapse: collapse;
+  }
+  table th, table td {
+    border: solid 1px black;
+   width:70px;
+   font-size: 30px;
+  }
+  .code-name{
+      font-size: 45px;
+      font-family: 'impact';
+      margin-bottom: 20px;
+  }
+  /*Eコード*/
+  
+  .e-code{
+      margin:30px;
+      display:inline-block;
+  }
+  .e-mute{
+      display: inline-block;
+      writing-mode: vertical-rl;
+      position: absolute;
+      font-size: 20px;
+      left:-18px;
+      bottom:45px;
+  }
+  .e-finger{
+      width:35px;
+      height:156.5px;
+      background: rgba(197, 171, 141, 0.719);
+      border-radius: 0 0 15px 15px;
+      position: absolute;
+      left:88px;
+      bottom:15px;
+      display:none;
+  }
+  .e-finger-name{
+      writing-mode: vertical-rl;
+      font-size: 18px;
+      display: inline-block;
+      position: absolute;
+      left:97px;
+      top:5px;
+      display:none;
+  }
+  .e-circle {
+    width: 20px;
+    height: 20px;
+    background:black;
+    border-radius: 50px;
+    position: absolute;
+    left:95px;
+    bottom: 21px;
+ }
+ .e-square {
+    width: 10px;
+    height:156.5px;
+    background: black;
+    position: absolute;
+    left:0px;
+    bottom:0px;
+ }
+ /*Fコード*/
+ 
+ .f-code{
+    margin:30px;
+  display:inline-block;
+}
+.f-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:45px;
+}
+.f-finger{
+    width:35px;
+    height:185px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:21px;
+    bottom:-15px;
+    display:none;
+}
+.f-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:28px;
+    top:5px;
+    display:none;
+}
+.f-finger2{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:158px;
+    bottom:15px;
+    display:none;
+}
+.f-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:166px;
+    top:5px;
+    display:none;
+}
+ .f-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:28px;
+    bottom: -10px;
+ }
+ .f-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:165px;
+    bottom: 21px;
+ }
+ .f-square {
+    width: 10px;
+    height:156.5px;
+    background: black;
+    position: absolute;
+    left:0px;
+    bottom:0px;
+ }
+ /*Gコード*/
+ 
+ .g-code{
+    margin:30px;
+    display:inline-block;
+ }
+ .g-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:45px;
+}
+ .g-finger{
+    width:35px;
+    height:185px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:88px;
+    bottom:-15px;
+    display:none;
+}
+.g-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:97px;
+    top:5px;
+    display:none;
+}
+.g-finger2{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:229px;
+    bottom:15px;
+    display:none;
+}
+.g-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:237px;
+    top:5px;
+    display:none;
+}
+ .g-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:95px;
+    bottom: -10px;
+ }
+ .g-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:236px;
+    bottom: 21px;
+ }
+ /*Aコード*/
+ 
+ .a-code{
+    margin:30px;
+    display:inline-block;
+}
+.a-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:45px;
+}
+.a-finger{
+    width:35px;
+    height:185px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:88px;
+    bottom:-15px;
+    display:none;
+}
+.a-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:97px;
+    top:5px;
+    display:none;
+}
+.a-finger2{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:229px;
+    bottom:15px;
+    display:none;
+}
+.a-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:237px;
+    top:5px;
+    display:none;
+}
+ .a-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:95px;
+    bottom: -10px;
+ }
+ .a-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:236px;
+    bottom: 21px;
+ }
+ /*Bコード*/
+ 
+ .b-code{
+    margin:30px;
+    display:inline-block;
+}
+.b-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:-20px;
+}
+.b-finger{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:21px;
+    bottom:15px;
+    display:none;
+}
+.b-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:28px;
+    top:5px;
+    display:none;
+}
+.b-finger2{
+    width:35px;
+    height:123px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:158px;
+    bottom:47px;
+    display:none;
+}
+.b-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:166px;
+    top:5px;
+    display:none;
+}
+ .b-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:28px;
+    bottom: 21px;
+ }
+ .b-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:165px;
+    bottom: 52px;
+ }
+ .b-square {
+    width: 10px;
+    height:156.5px;
+    background: black;
+    position: absolute;
+    left:0px;
+    bottom:0px;
+ }
+ /*Cコード*/
+ 
+ .c-code{
+    margin:30px;
+    display:inline-block;
+}
+.c-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:-20px;
+}
+.c-finger{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:88px;
+    bottom:15px;
+    display:none;
+}
+.c-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:97px;
+    top:5px;
+    display:none;
+}
+.c-finger2{
+    width:35px;
+    height:123px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:229px;
+    bottom:47px;
+    display:none;
+}
+.c-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:237px;
+    top:5px;
+    display:none;
+}
+ .c-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:95px;
+    bottom: 21px;
+ }
+ .c-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:236px;
+    bottom: 52px;
+ }
+ /*Dコード*/
+ 
+ .d-code{
+    margin:30px;
+    display:inline-block;
+}
+.d-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:-20px;
+}
+.d-finger{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:88px;
+    bottom:15px;
+    display:none;
+}
+.d-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:97px;
+    top:5px;
+    display:none;
+}
+.d-finger2{
+    width:35px;
+    height:123px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:229px;
+    bottom:47px;
+    display:none;
+}
+.d-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:237px;
+    top:5px;
+    display:none;
+}
+ .d-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:95px;
+    bottom: 21px;
+ }
+ .d-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:236px;
+    bottom: 52px;
+ }
+
+ /*コードの♯と♭*/
+.sharp-flat-section{
+    padding-top:50px;
+}
+.sh-fl-text{
+    padding-left:40px;
+    padding-top:30px;
+    font-family: 'Hiragino Maru Gothic ProN';
+    font-size: 18px;
+    color:rgb(75, 75, 75);
+}
+.sh-fl-text span{
+    font-weight: bold;
+    color:black;
+}
+.change{
+    display:inline-block;
+    font-size: 100px;
+    color:rgb(216, 33, 207);
+    position:relative;
+    top:-60px;
+}
+.cs-slide{
+    display:inline-block;
+    position:absolute;
+    color:rgb(216, 33, 207);
+    font-size: 30px;
+    left:128px;
+    bottom:15px;
+}
+.cs-slide2{
+    display:inline-block;
+    position:absolute;
+    color:rgb(216, 33, 207);
+    font-size: 30px;
+    left:270px;
+    bottom:47px;
+}
+.cs-code{
+    margin:30px;
+    display:inline-block;
+}
+.cs-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:-20px;
+}
+.cs-finger{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:158px;
+    bottom:15px;
+    display:none;
+}
+.cs-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:167px;
+    top:5px;
+    display:none;
+}
+.cs-finger2{
+    width:35px;
+    height:123px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:298px;
+    bottom:47px;
+    display:none;
+}
+.cs-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:306px;
+    top:5px;
+    display:none;
+}
+ .cs-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:165px;
+    bottom: 21px;
+ }
+ .cs-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:305px;
+    bottom: 52px;
+ }
+ .cs-circle2 {
+    width: 20px;
+    height: 20px;
+    border:dashed 3px rgb(216, 33, 207);
+    border-radius: 50px;
+    position: absolute;
+    left:95px;
+    bottom: 21px;
+ }
+ .cs-circles2 {
+    width: 20px;
+    height: 20px;
+    border:dashed 3px rgb(216, 33, 207);
+    border-radius: 50px;
+    position: absolute;
+    left:236px;
+    bottom: 52px;
+ }
+ .cf-slide{
+    display:inline-block;
+    position:absolute;
+    color:rgb(216, 33, 207);
+    font-size: 30px;
+    left:55px;
+    bottom:15px;
+}
+.cf-slide2{
+    display:inline-block;
+    position:absolute;
+    color:rgb(216, 33, 207);
+    font-size: 30px;
+    left:195px;
+    bottom:47px;
+}
+ .cf-code{
+    margin:30px;
+    display:inline-block;
+}
+.cf-mute{
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    font-size: 20px;
+    left:-18px;
+    bottom:-20px;
+}
+.cf-finger{
+    width:35px;
+    height:156.5px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:17px;
+    bottom:15px;
+    display:none;
+}
+.cf-finger-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:26px;
+    top:5px;
+    display:none;
+}
+.cf-finger2{
+    width:35px;
+    height:123px;
+    background: rgba(197, 171, 141, 0.719);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    left:158px;
+    bottom:47px;
+    display:none;
+}
+.cf-finger2-name{
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left:167px;
+    top:5px;
+    display:none;
+}
+ .cf-circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:24px;
+    bottom: 21px;
+ }
+ .cf-circles {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    left:165px;
+    bottom: 52px;
+ }
+ .cf-circle2 {
+    width: 20px;
+    height: 20px;
+    border:dashed 3px rgb(216, 33, 207);
+    border-radius: 50px;
+    position: absolute;
+    left:95px;
+    bottom: 21px;
+ }
+ .cf-circles2 {
+    width: 20px;
+    height: 20px;
+    border:dashed 3px rgb(216, 33, 207);
+    border-radius: 50px;
+    position: absolute;
+    left:236px;
+    bottom: 52px;
+ }
+ /*フッター*/
+ footer{
+ height:100px;
+    width:100%;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color:rgba(209, 203, 203, 0.555);
+ }
+ .footer-left{
+     display:inline-block;
+ }
+ .profile{
+    font-family: 'Hiragino Maru Gothic ProN';
+    font-size: 15px;
+    color:rgb(75, 75, 75);
+    padding-left:30px;
+    padding-bottom:15px;
+ }
+ .profile span{
+     font-size: 20px;
+ }
+ .footer-right{
+     display:inline-block;
+     float:right;
+ }
+ .ins{
+    text-decoration: none;
+    padding-left:30px;
+ }
+ .ins:hover{
+     color:rgb(148, 3, 148);
+     transition: .5s;
+ }
+ .date{
+     padding-right:30px;
+ }
