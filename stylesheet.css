@@ -252,7 +252,7 @@ font-size: 40px;
     font-weight: bold;
 }
 .score{
-    margin-left:40px;
+    padding-left:40px;
     margin-top:50px;
     font-family: 'Hiragino Maru Gothic ProN';
     font-size: 18px;
@@ -818,6 +818,13 @@ table {
     position:relative;
     top:-60px;
 }
+.change2{
+    display:inline-block;
+    font-size: 0px;
+    color:rgb(216, 33, 207);
+    position:relative;
+    top:0px;
+}
 .cs-slide{
     display:inline-block;
     position:absolute;
@@ -1030,7 +1037,7 @@ table {
     padding-bottom:30px;
     background-color:rgba(209, 203, 203, 0.555);
  }
- .footer-left{
+ .footer{
      display:inline-block;
  }
  .profile{
@@ -1042,10 +1049,6 @@ table {
  }
  .profile span{
      font-size: 20px;
- }
- .footer-right{
-     display:inline-block;
-     float:right;
  }
  .ins{
     text-decoration: none;
