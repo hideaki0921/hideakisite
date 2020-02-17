@@ -6,6 +6,7 @@
   <title>Guitar code</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
@@ -43,7 +44,7 @@
   </p>
     <p class="example" style="line-height: 1.8em; letter-spacing: 0.3em;">（Cコードの例）
     <br>Cの基本コード：ド、ミ、ソ
-    <br><br><span class="mark">↓</span>和音の2つ目を省略！（ド、<span class="bold">ミ</span>、ソから<span class="bold">ミ</span>を取る）
+    <br><br><span class="mark">↓</span><span class="center">和音の2つ目を省略！（ド、<span class="bold">ミ</span>、ソから<span class="bold">ミ</span>を取る）</span>
     <br><br>Cのパワーコード：ド、ソ
     </p>
     <p  class="summary" style="line-height: 1.8em; letter-spacing: 0.3em;"><br><br>つまり、パワーコードを使えばどんなコードでも<span>たった2つの音だけ</span>で鳴らすことができるのです！</p>
@@ -79,9 +80,11 @@
 
   <!--各コード一覧-->
 <div id="code-menu" class="code-menu-section">
+  <div class="code-menu-topic">
   <p class="topic">各パワーコード一覧</p>
+  </div>
   <p class="text-code">○それぞれ画像をクリックすると、押さえる指が表示されます</p>
-  <div class="e-code">
+  <div class="e-code box">
     <p class="code-name">E</p>
   <div class="code">
   <table border="1">
@@ -110,7 +113,7 @@
   <p class="fret" style="letter-spacing: 1.65em;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
 </div>
 
-<div class="f-code">
+<div class="f-code box">
   <p class="code-name">F</p>
   <div class="code">
     <table border="1">
@@ -142,7 +145,7 @@
     <p class="fret" style="letter-spacing: 1.65em;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
   </div>
 
-  <div class="g-code">
+  <div class="g-code box">
     <p class="code-name">G</p>
     <div class="code">
       <table border="1">
@@ -173,7 +176,7 @@
       <p class="fret" style="letter-spacing: 1.65em;">&nbsp2&nbsp3&nbsp4&nbsp5&nbsp6</p>
     </div>
 
-    <div class="a-code">
+    <div class="a-code box">
       <p class="code-name">A</p>
       <div class="code">
         <table border="1">
@@ -204,7 +207,7 @@
         <p class="fret" style="letter-spacing: 1.65em;">&nbsp4&nbsp5&nbsp6&nbsp7&nbsp8</p>
       </div>
 
-      <div class="b-code">
+      <div class="b-code box">
         <p class="code-name">B</p>
         <div class="code">
           <table border="1">
@@ -236,7 +239,7 @@
           <p class="fret" style="letter-spacing: 1.65em;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
         </div>
 
-        <div class="c-code">
+        <div class="c-code box">
           <p class="code-name">C</p>
           <div class="code">
             <table border="1">
@@ -266,7 +269,7 @@
             </div>
             <p class="fret" style="letter-spacing: 1.65em;">&nbsp2&nbsp3&nbsp4&nbsp5&nbsp6</p>
           </div>
-          <div class="d-code">
+          <div class="d-code box">
             <p class="code-name">D</p>
             <div class="code">
               <table border="1">
@@ -300,6 +303,7 @@
 
 <!--コードの♯と♭-->
 <div id="sharp-flat" class="sharp-flat-section">
+  <div class="sharp-flat-topic">
   <p class="topic">コードの♯と♭</p>
   <p class="text-about" style="line-height: 1.8em; letter-spacing: 0.3em;">
     コード譜の中で、C♯やE♭など、"♯"と"♭"のついたコードをしばしば見ると思います。
@@ -310,8 +314,9 @@
     ・<span>♭のついたコード（○♭）</span>：フレットを1つ下げる（ヘッド側に1つずらす）</p>
     <p class="text-about" style="line-height: 1.8em; letter-spacing: 0.3em;">
     Cコードの♯と♭を例にして見ましょう。</p>
+  </div>
     <p class="text-code">○それぞれ画像をクリックすると、押さえる指が表示されます</p>
-    <div class="c-code">
+    <div class="c-code box">
       <p class="code-name">C</p>
       <div class="code">
         <table border="1">
@@ -342,7 +347,8 @@
         <p class="fret" style="letter-spacing: 1.65em;">&nbsp2&nbsp3&nbsp4&nbsp5&nbsp6</p>
       </div>
       <p class="change">→</p>
-      <div class="cs-code">
+      <p class="change2">↓</p>
+      <div class="cs-code box">
         <p class="code-name">C♯</p>
         <div class="code">
           <table border="1">
@@ -376,7 +382,7 @@
           </div>
           <p class="fret" style="letter-spacing: 1.65em;">&nbsp2&nbsp3&nbsp4&nbsp5&nbsp6</p>
         </div>
-        <div class="c-code">
+        <div class="c-code box">
           <p class="code-name">C</p>
           <div class="code">
             <table border="1">
@@ -407,7 +413,8 @@
             <p class="fret" style="letter-spacing: 1.65em;">&nbsp2&nbsp3&nbsp4&nbsp5&nbsp6</p>
           </div>
           <p class="change">→</p>
-          <div class="cf-code">
+          <p class="change2">↓</p>
+          <div class="cf-code box">
             <p class="code-name">C♭</p>
             <div class="code">
               <table border="1">
@@ -441,19 +448,18 @@
               </div>
               <p class="fret" style="letter-spacing: 1.65em;">&nbsp2&nbsp3&nbsp4&nbsp5&nbsp6</p>
             </div>
+            <div class="sharp-flat-topic">
             <p class="text-about" style="line-height: 1.8em; letter-spacing: 0.3em;">
             このように、<span>♯は一つ上げる</span>、<span>♭は1つ下げる</span>と覚えておけば、これらの記号にも対応できるのです！</p>
+            </div>
 </div>
 
 </div>
 <!--フッター-->
 <footer>
-  <div class="footer-left">
-<div class="profile">Produced by <span>Hideaki Suwa</span></div>
+<div class="footer">
+<div class="profile">Produced by <span>Hideaki Suwa</span><br><br>Date 2020/2/6</div>
 <a href="https://www.instagram.com/golden_dog000/?hl=ja" class="ins"><i class="fab fa-instagram fa-2x"></i>  Please Follow me!</a>
-</div>
-<div class="footer-right">
-<p class="date">Date 2020/2/6</p>
 </div>
 </footer>
 <div class="start">
