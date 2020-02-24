@@ -159,6 +159,58 @@ header{
 ul{
     list-style:none;
 }
+.cp_menu {
+	max-width: 180px;
+	margin: 0 auto;
+    padding: 0;
+    float:right;
+    display:none;
+    font-family: 'Hiragino Maru Gothic ProN';
+}
+.cp_menu a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color:white;
+	line-height: 1;
+}
+.cp_menu a:hover{
+    color:rgb(65, 185, 201);
+    transition:color .3s;
+}
+.cp_menu label {
+    display: block;
+    text-align:right;
+	position: relative;
+    padding: 20px 20px 0px 0px;
+    margin-bottom:14px;
+	line-height: 1;
+	color: #ffffff;
+	cursor: pointer;
+}
+.cp_menu label:hover{
+    color:rgb(255, 243, 80);
+    transition:color .3s;
+}
+.cp_menu input {
+	display: none;
+}
+.cp_menu ul {
+	margin:0;
+	padding: 0;
+    background-color: rgba(23, 34, 80, 0.904);
+	list-style: none;
+}
+.cp_menu li {
+	overflow-y: hidden;
+	max-height: 0;
+    transition: all 0.5s;
+}
+#cp_menu_bar1:checked ~ #link1 li {
+	max-height: 46px;
+	opacity: 1;
+}
+
 
 /*トップ*/
 .top{
