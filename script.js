@@ -47,4 +47,9 @@ $('html, body').animate({'scrollTop':position},500);
         $('.cf-finger,.cf-finger-name,.cf-finger2,.cf-finger2-name').fadeToggle();
     });
 
+    $('.btnHamburger').on('click', function(){　//.btnHamburgerがクリックされた時の処理
+        $(this).toggleClass('is-active');　//.is-activeを付ける・外す
+      });
+        
+
 });
